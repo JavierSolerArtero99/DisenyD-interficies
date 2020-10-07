@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Soler Artero" />
+    <meta name="description" content="Exercici de HTML 2.4">
+    <title>Exercici 2.4</title>
+</head>
+
+<body>
+
+    <form action="formulario">
+        <label for="nombre">Nombre Completo</label><br>
+        <input required type="text" name="nombre" id="nombre"><br>
+
+        <label for="email">Dirección de correo electrónico</label><br>
+        <input required type="email" name="email" id="email"><br>
+
+       <label for="repeat-email">Repite la dirección de correo electrónico</label><br>
+        <input required type="email" name="repeat-email" id="repeat-email"><br>
+
+        <label for="f-llegada">Fecha de llegada</label><br>
+        <input type="date" name="f-llegada" id="f-llegada" ><br>
+        
+       <label for="noches">Numero de noches</label><br>
+        <input required type="number" name="noches" id="noches" value="1" min="1" max="14"><br>
+
+        <label for="personas">Numero de personas</label><br>
+        <input required type="number" name="personas" id="personas" value="1" min="1" max="9"><br>
+
+        <span>Total estimado: </span><br>
+
+        <label for="cod">Codigo promocional</label><br>
+        <input type="text" name="cod" id="cod"><br>
+        
+        <input type="submit" name="submit" id="submit">
+    </form>
+    
+</body>
+
+</html>
