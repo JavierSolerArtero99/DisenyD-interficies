@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Soler Artero" />
+    <meta name="description" content="Exercici de HTML 2.3">
+    <title>Exercici 2.3</title>
+</head>
+
+<body>
+
+    <form name=“formulari“ action=“” method="">
+        <fieldset>
+            <legend>Datos Basicos</legend>
+
+            <label for="nombre">Nombre</label><br>
+            <input name='nombre' type='text' tabindex='1'><br>
+
+            <label for="descripcion">Descripción</label><br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea><br>
+
+            <label for="foto">Foto</label>
+            <input type="text" name="foto" id="foto">
+            <input type="file"><br>
+
+            <input type="checkbox" name="contadorVisitas" id="contadorVisitas">
+            <label for="contadorVisitas">Añadir contador de visitas</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos Economicos</legend>
+
+            <label for="precio">Precio</label>
+            <input type="number"><span> €</span>
+
+            <label for="impuestos">Impuestos</label>
+            <select name="impuestos" id="impuestos">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select><br>
+
+            <label for="promocion">Promocion</label><br>
+            <input type="radio">Ninguno<br>
+            <input type="radio">Transporte gratuito<br>
+            <input type="radio">Descuento 5%<br>
+
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
