@@ -10,7 +10,7 @@
 
 <body>
 
-    <form action="formulario">
+    <form action="formulario" oninput="resultado.value=parseInt(personas.value)*10 + parseInt(noches.value)*99">
         <label for="nombre">Nombre Completo</label><br>
         <input required type="text" name="nombre" id="nombre"><br>
 
@@ -29,7 +29,8 @@
         <label for="personas">Numero de personas</label><br>
         <input required type="number" name="personas" id="personas" value="1" min="1" max="9"><br>
 
-        <span>Total estimado: </span><br>
+        <span>Total estimado: </span>
+        <output name="resultado" for="personas noches"></output><br>
 
         <label for="cod">Codigo promocional</label><br>
         <input type="text" name="cod" id="cod"><br>
