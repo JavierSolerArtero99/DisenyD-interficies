@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Javier Soler Artero" />
+    <meta name="description" content="Exercici de HTML 2.7">
+    <title>Exercici 2.7</title>
+</head>
+
+<body>
+    <p>El elemento datalist como bien dice su nombre es una lista de unos datos predefinidos anteriormente. Se basa en
+        crear un input y posteriormente asignar la lista que se quiere mostrar con la etiqueta datalist</p>
+    <p>Mientras tanto, con el atributo autofocus, podemos hacer que nada más se cargue la página, el input al que le hemos
+        añadido el autofocus estará seleccionado, en este caso es el input para elegir el color.</p>
+
+    <label for="color">Elige un color:</label>
+    <input list="colors" name="color" id="color" autofocus>
+
+    <datalist id="colors">
+        <option value="Azul">
+        <option value="Rojo">
+        <option value="Negro">
+        <option value="Gris">
+        <option value="Verde">
+    </datalist>
+
+
+</body>
+
+</html>
