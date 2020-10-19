@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;    
+}
+
+/* card */
+
+.card{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 100px;
+    border-width: 1px;
+    border-style: solid;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+}
+.card__image{
+    height: 286px;
+    width: 300px;
+    background-color: grey;
+}
+.card__title{
+    margin-left: 20px;
+
+}
+.card__body{
+    margin-left: 20px;
+
+}
+.card__btn{
+    padding: 20px;
+    margin-left: 20px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+
+/* formulari */
+
+.form{
+    border-style: none;
+}
+
+.form__fieldset{
+    border-style: none;
+}
+
+.form__title{
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.form__input{
+    border-radius: 5px;
+    border-style: solid;
+    width: 500px;
+    border-width: 1px;
+}
+
+.email_message{
+    color: grey;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.form__submit{
+    padding: 10px;
+    border-style: none;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
