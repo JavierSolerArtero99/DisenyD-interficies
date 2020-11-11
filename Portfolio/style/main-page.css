@@ -1,8 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
-
-
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Stencil+Text:wght@100&display=swap');
 
 
 /*GLOBAL*/
@@ -13,8 +9,8 @@
 }
 
 body {
-    background-image:linear-gradient(90deg, rgba(55,58,64,0.7651435574229692) 0%, rgba(104,109,118,0.7847514005602241) 100%),
-     url('../assets/imgs/fondo-textura.jpg'); 
+    background-image: linear-gradient(90deg, rgba(55,58,64,0.7651435574229692) 0%, rgba(104,109,118,0.7847514005602241) 100%),
+     url('../assets/imgs/gif.gif'); 
      background-size: cover;
 }
 
@@ -61,41 +57,30 @@ body {
     text-decoration: none;
 }
 
-.navigation_about{
-    
-}
-
-.navigation_projects:hover{
-    font-family: 'Goldman', cursive;
-}
-
-.navigation_services:hover{
-    transition: 2s;
-    font-family: 'Big Shoulders Stencil Text', cursive;
-}
-
 .navigation_item:hover{
-    transition: 2s;
+    transition: 1s;
+    font-weight: bold;
+    color: black;
     font-size: 53px;
     text-decoration: line-through;
 }  
 
 .navigation_about:hover ~ .sectionImage{
     transition: 2s;
-    opacity: 0.2;
+    opacity: 0.6;
     content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
 
 .navigation_projects:hover ~ .sectionImage{
     transition: 2s;
-    opacity: 0.2;
+    opacity: 0.6;
     content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
 .navigation_services:hover ~ .sectionImage{
     transition: 2s;
-    opacity: 0.2;
+    opacity: 0.6;
     content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
