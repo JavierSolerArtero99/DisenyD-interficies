@@ -60,15 +60,21 @@ body {
 }
 
 .navigation_about:hover ~ .sectionImage{
-    content:url("");
+    transition: 2s;
+    opacity: 0.2;
+    content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
 .navigation_projects:hover ~ .sectionImage{
-    content:url("");
+    transition: 2s;
+    opacity: 0.2;
+    content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
 .navigation_services:hover ~ .sectionImage{
-    content:url("");
+    transition: 2s;
+    opacity: 0.2;
+    content:url('../assets/imgs/proyectos/proyecto1.png');
 }
 
 
@@ -78,7 +84,8 @@ body {
     position: fixed;
     right: 17%;
     top: 17%;
-    height: 600px;
     border-radius: 10px;
-    width: auto;
+    height: 600px;
+    width: 600px;
+    content:url('../assets/imgs/me.jpeg');
 }
