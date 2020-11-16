@@ -26,11 +26,14 @@
     <meta itemprop="ratingValue" content="4" />
     <meta itemprop="bestRating" content="5" />
     <title>Services</title>
+
+    <link rel="stylesheet" href="../style/services.css">
 </head>
 
 <body>
 
     <header>
+        <a href="../index.html"><h1 class="logo"> { J. Soler A. }</h1></a>
         <nav>
             <a href="./about-me.html">About me</a>
             <a href="./project.html">Projects</a>
@@ -38,21 +41,60 @@
         </nav>
     </header>
 
-    <h1>Javier Soler Artero's Services</h1>
+    <main>        
+        <h1>Javier Soler Artero's Services</h1>
+        
+        <section class="services">
 
-    <!-- Image Slider with projects-->
-    <img src="https://smartslider3.com/wp-content/uploads/2019/01/imageslider-1-780x410.png"
-        alt="Imagen de los servicios que ofrece el desarrollador">
+            <div class="services_container">
+                <div class="services_item">
+                    <img src="../assets/imgs/services/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+    
+                <div class="services_item">
+                    <img src="../assets/imgs/services/javascript.png" alt="Java">
+                    <p>JavaScript</p>
+                </div>
+    
+                <div class="services_item">
+                    <img src="../assets/imgs/services/react.png" alt="Java">
+                    <p>React/React Native</p>
+                </div>
+            </div>
+            
+            <div class="services_container">
+                <div class="services_item">
+                    <img src="../assets/imgs/services/php.png" alt="Java">
+                    <p>PHP</p>
+                </div>
+    
+                <div class="services_item">
+                    <img src="../assets/imgs/services/pithon.png" alt="Java">
+                    <p>Python</p>
+                </div>
+    
+                <div class="services_item">
+                    <img src="../assets/imgs/services/mysql.png" alt="Java">
+                    <p>MYSQL</p>
+                </div>
+            </div>
 
-    <button>Budget</button>
-    <button>Contact me</button>
+            <div class="services_container">
+                <div class="services_item">
+                    <img src="../assets/imgs/services/nodejs.png" alt="Java">
+                    <p>NodeJS</p>
+                </div>
+    
+                <div class="services_item">
+                    <img src="../assets/imgs/services/docker.png" alt="Java">
+                    <p>Docker</p>
+                </div>
+            </div>
+            
+        </section>
 
-    <h2>Work Values</h2>
-    <ul>
-        <li>Team Work</li>
-        <li>Creativity</li>
-        <li>Hard Work</li>
-    </ul>
+    </main>
 </body>
 
 </html>
