@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox 01 - Javier Soler Artero</title>
+    <style>
+        .container{
+            background-color: tomato;
+            padding: 2em;
+            width: 20em;
+            display: flex;
+            margin-bottom: 1em;
+        }
+
+        .container-first{
+            justify-content: start;
+        }
+
+        .container-second{
+            justify-content: center;
+        }
+
+        .container-third{
+            justify-content: end;
+        }   
+
+        .container_element{
+            color: white;
+            padding: 1em;
+            background-color: blue;
+            margin-left: 0.1em;
+            margin-right: 0.1em;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container container-first">
+        <p class="container_element">1</p>
+        <p class="container_element">2</p>
+        <p class="container_element">3</p>
+    </div>
+
+    <div class="container container-second">
+        <p class="container_element">1</p>
+        <p class="container_element">2</p>
+        <p class="container_element">3</p>
+    </div>
+
+    <div class="container container-third">
+        <p class="container_element">1</p>
+        <p class="container_element">2</p>
+        <p class="container_element">3</p>
+    </div>
+</body>
+</html>
