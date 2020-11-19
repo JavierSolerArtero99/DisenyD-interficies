@@ -34,21 +34,80 @@
 <body>
 
     <header>
-        <a href="../index.html"><h1 class="logo"> { J. Soler A. }</h1></a>
+        <a href="../index.html">
+            <h1 class="logo"> { J. Soler A. }</h1>
+        </a>
         <nav>
             <a href="./about-me.html">About me</a>
             <a href="./project.html">Projects</a>
+            <a href="#">Contact</a>
             <a href="./services.html">Services</a>
         </nav>
     </header>
 
     <main>
-        <h1>Contact with Javier Soler Artero</h1>
+        <h2>Contact with Javier Soler Artero</h2>
 
         <form action="">
-            <input type="text">
-            <input type="text">
-            <input type="text">
+
+            <!-- nombre -->
+            <label for="nombre">Nombre</label>
+            <input name='nombre' type='text' required>
+
+            <!-- email -->
+            <label for="email">E-Mail</label>
+            <input name='email' type='email' required>
+
+            <!-- telefono -->
+            <label for="telefono">Number</label>
+            <input name='telefono' type='tel' required>
+
+            <!-- fecha -->
+            <label for="fecha">Fecha de contacto</label><br>
+            <input type="date" name="fecha" id="fecha" ><br>
+
+            <!-- services -->
+            <label for="service">Choose a service:</label>
+            <input list="services" name="service" id="service" autofocus required>
+            <datalist id="services">
+                <option value="Mobile App">
+                <option value="SEO">
+                <option value="Web App">
+                <option value="Backend">
+                <option value="Wordpress">
+                <option value="Other">
+            </datalist>
+
+            <!-- anterioridad
+            <label for="anterioridad">Contacto con anterioridad</label>
+            <div class="anterior">
+                <input type="radio">Si
+                <input type="radio">No
+            </div> -->
+
+            <!-- descripcion -->
+            <label for="descripcion">Descripción</label>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+
+            <!-- foto -->
+            <label for="foto">Foto</label>
+            <input type="file">
+
+            <!-- precio -->
+            <label for="precios">Precios</label>
+            <select name="precios" id="precios">
+                <option value="1">+100</option>
+                <option value="2">+1000</option>
+                <option value="3">+10000</option>
+                <option value="4">+100000</option>
+            </select>
+
+            <!-- promocion -->
+            <label for="cod">Promotional Code</label>
+            <input type="text" name="cod" id="cod">
+
+            <!-- envio -->
+            <input type="submit" name="submit" id="submit">
         </form>
     </main>
 

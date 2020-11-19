@@ -13,7 +13,7 @@ html{
 }
 
 body {
-    background-image: linear-gradient(90deg, rgba(55,58,64,0.7651435574229692) 0%, rgba(104,109,118,0.7847514005602241) 100%),
+    background-image: linear-gradient(90deg, rgba(55, 58, 64, 0.685) 0%, rgba(104, 109, 118, 0.698) 100%),
     url('../assets/imgs/fondo2.gif'); 
     background-size: cover;
     background-position: center;
@@ -57,7 +57,7 @@ body {
 }
 
 .navigation_item{
-    font-size: 50px;
+    font-size: 3em;
     color: #19d3da;
     text-decoration: none;
 }

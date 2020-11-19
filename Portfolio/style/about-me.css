@@ -9,8 +9,13 @@
     text-decoration: none;
 }
 
+html{
+    height: 100%;
+}
+
 body {
     background-color: #373a3e;
+    height: 80%;
 }
 
 
@@ -48,9 +53,34 @@ header nav a:hover{
 
 main{
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
+    flex-direction: row;
+    height: 95%;
+    padding-left: 5em;
+    padding-right: 5em;
     align-items: center;
+    justify-content: space-between;
     color: #eeeeee;
 }
+
+aside img {
+    width: 25em;
+    border-radius: 20px;
+
+}
+
+section{
+    padding-left: 5em;
+    padding-right: 5em;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia a {
+    margin-top: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+

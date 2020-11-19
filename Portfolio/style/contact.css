@@ -14,7 +14,7 @@ html{
 
 body{
     height: 100%;
-    background-color: #373a3e;;
+    background-color: #373a3e;
 }
 
 /* HEADER */
@@ -55,10 +55,14 @@ header nav a:hover{
 main{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     color: #eeeeee;
+}
+
+h2{
+    margin-top: 1em;
 }
 
 
@@ -70,17 +74,56 @@ form{
     flex-direction: column;
     margin-top: 2%;
     background-color: #373a3e;
-    width: 100%;
+    width: 70%;
+}
+
+form label{
+    align-self: flex-start;
+    margin-left: 15%;
 }
 
 form input {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 0.2%;
+    margin-bottom: 3%;
     padding: 1%;
     border-style: none;
     width: 70%;
-    height: 1.5em;
-    border-radius: 50px;
+    height: 1em;
+    color: #eeeeee;
+    border-bottom: solid #eeeeee 0.2em;
+    background:#373a3e;
+}
+
+form input:focus, form input:hover{
+    border-color: #19d3da;
+}
+
+form textarea{
+    background-color: #373a3e;
+    width: 72%;
+    border-width: 0.2em;
+    border-color: #eeeeee;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+form textarea:focus{
+    color: #eeeeee;
+    border-color: #19d3da;
+}
+
+#precios{
+    align-self: flex-start;
+    margin-left: 14%;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+#submit{
+    background-color: #eeeeee;
+    border: #eeeeee;
+    height: 3em;
+    width: 30%;
     color: #373a3e;
-    background: #eeeeee;
+    border-radius: 3px;
 }
