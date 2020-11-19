@@ -60,6 +60,8 @@ body {
     font-size: 3em;
     color: #19d3da;
     text-decoration: none;
+    width: fit-content;
+    align-self: center;
 }
 
 .navigation_item:hover{

@@ -61,10 +61,6 @@ main{
     color: #eeeeee;
 }
 
-h2{
-    margin-top: 1em;
-}
-
 
 /* FORM */
 
@@ -80,6 +76,7 @@ form{
 form label{
     align-self: flex-start;
     margin-left: 15%;
+    font-weight: bold;
 }
 
 form input {
@@ -94,8 +91,11 @@ form input {
     background:#373a3e;
 }
 
-form input:focus, form input:hover{
+form input:focus{
     border-color: #19d3da;
+    width: 75%;
+    transition: 2s;
+    outline: none;
 }
 
 form textarea{
@@ -104,12 +104,15 @@ form textarea{
     border-width: 0.2em;
     border-color: #eeeeee;
     border-radius: 10px;
-    margin-bottom: 1em;
+    margin-bottom: 4em;
 }
 
 form textarea:focus{
     color: #eeeeee;
     border-color: #19d3da;
+    width: 75%;
+    transition: 2s;
+    outline: none;
 }
 
 #precios{
