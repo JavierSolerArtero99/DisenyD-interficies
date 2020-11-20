@@ -61,6 +61,13 @@ main{
     color: #eeeeee;
 }
 
+h1{
+    color: #eeeeee;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
 
 /* FORM */
 
@@ -104,6 +111,10 @@ form textarea{
     border-width: 0.2em;
     border-color: #eeeeee;
     border-radius: 10px;
+    border-top-color: #373a3e;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin-top: 1em;
     margin-bottom: 4em;
 }
 

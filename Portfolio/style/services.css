@@ -52,14 +52,22 @@ header nav a:hover{
 
 /* CONTENT */
 
+h1{
+    color: #eeeeee;
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
 main{
     display: flex;
-    height: 90%;
+    height: 70%;
     flex-flow: column;
     color: #eeeeee;
     justify-content: center;
     align-items: center;
 }
+
 
 .services{
     display: flex;
