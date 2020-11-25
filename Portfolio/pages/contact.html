@@ -48,7 +48,7 @@
     <main>
         <h1>Contact with Javier Soler Artero</h1>
 
-        <form action="">
+        <form action="" oninput="resultado.value=parseInt(cantidadPj.value) *( Math.pow(10, parseInt(precios.value))* 10)">
 
             <!-- nombre -->
             <label for="nombre">Nombre</label>
@@ -100,11 +100,19 @@
             <!-- precio -->
             <label for="precios">Precios</label>
             <select name="precios" id="precios">
-                <option value="1">+100</option>
-                <option value="2">+1000</option>
-                <option value="3">+10000</option>
-                <option value="4">+100000</option>
+                <option value="1">100</option>
+                <option value="2">1000</option>
+                <option value="3">10000</option>
+                <option value="4">100000</option>
             </select>
+
+            <!-- cantidad de proyectos -->
+            <label for="cantidadPj">Cantidad de proyectos</label>
+            <input id="cantidadPj" type="number" value="1" min="1" max="9">
+
+            <!-- campo calculado -->    
+            <label for="total">Total:</label>
+            <output name="resultado" for="cantidadPj precios">100</output><br>
 
             <!-- envio -->
             <input type="submit" name="submit" id="submit">
