@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grid layout</title>
+    <style>
+        * {
+            margin: 0%;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            display: grid;
+            grid-template-areas:
+                'title title title'
+                'aside-left main aside-right'
+                'footer footer footer';
+            grid-template-rows: 1fr 80% 1fr;
+            grid-template-columns: 1fr 4fr 1fr;
+        }
+
+        .title {
+            grid-area: title;
+            background-color: palevioletred;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: green;
+        }
+
+        .left {
+            grid-area: aside-left;
+            background-color: blue;
+        }
+
+        .right {
+            background-color: midnightblue;
+            grid-area: aside-right;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="title">
+        Title
+    </header>
+
+    <aside class="left">
+        Aside Left
+    </aside>
+
+    <main class="main">
+        Content
+    </main>
+
+    <aside class="right">
+        Aside Right
+    </aside>
+
+    <footer class="footer">
+        Footer
+    </footer>
+
+</body>
+
+</html>
