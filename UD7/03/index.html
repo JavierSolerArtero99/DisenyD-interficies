@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      :root {
+        --border-style: 1px solid black;
+        --highlight-color: yellow;
+        --content: "Maecenas sed...";
+        --content-intro: "Introducción";
+        --content-result: "Resultados";
+        --content-conclusion: "Conclusión";
+      }
+
+      body > section:first-child {
+        height: fit-content;
+        width: 20%;
+        padding: 1em;
+        border: var(--border-style);
+      }
+
+      ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+      }
+
+      li {
+        margin: 0.5em;
+      }
+
+      a:hover {
+        font-weight: bold;
+      }
+
+      h2:target {
+        background-color: var(--highlight-color);
+      }
+
+      p::before {
+        content: var(--content);
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#intro">Introducción</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#conclusion">Conclusión</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <section>
+          <h2 id="intro">Introducción</h2>
+          <p></p>
+        </section>
+        <section>
+          <h2 id="resultados">Resultados</h2>
+          <p></p>
+        </section>
+        <section>
+          <h2 id="conclusion">Conclusión</h2>
+          <p></p>
+        </section>
+      </main>
+    </section>
+  </body>
+</html>
