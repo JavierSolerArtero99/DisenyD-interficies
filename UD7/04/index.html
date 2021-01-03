@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS 03: 04</title>
+    <style>
+      :root {
+        --border: 1px solid black;
+        --marked: yellow;
+      }
+
+      section {
+        border: var(--border);
+        height: fit-content;
+        width: 10%;
+        padding: 1rem;
+      }
+
+      #a li:nth-child(-2n + 2) {
+        background-color: var(--marked);
+      }
+
+      #b li:nth-child(2n + 1) {
+        background-color: var(--marked);
+      }
+
+      #c li:nth-child(3n) {
+        background-color: var(--marked);
+      }
+    </style>
+  </head>
+  <body>
+    <section id="a">
+      <ul>
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+        <li>Gris</li>
+        <li>Violeta</li>
+        <li>Amarillo</li>
+        <li>Negro</li>
+      </ul>
+    </section>
+
+    <section id="b">
+      <ul>
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+        <li>Gris</li>
+        <li>Violeta</li>
+        <li>Amarillo</li>
+        <li>Negro</li>
+      </ul>
+    </section>
+
+    <section id="c">
+      <ul>
+        <li>Rojo</li>
+        <li>Verde</li>
+        <li>Azul</li>
+        <li>Gris</li>
+        <li>Violeta</li>
+        <li>Amarillo</li>
+        <li>Negro</li>
+      </ul>
+    </section>
+  </body>
+</html>
