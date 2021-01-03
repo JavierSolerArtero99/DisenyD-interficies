@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS 3: Act 1</title>
+    <source src="./index.js" />
+    <style>
+      :root {
+        --color-carta: white;
+        --bordes: 1px solid black;
+        --null: "";
+        --user: url("https://www.flaticon.es/svg/static/icons/svg/1317/1317350.svg");
+        --pdf: url("https://www.flaticon.es/svg/static/icons/svg/80/80942.svg");
+        --zip: url("https://www.flaticon.es/svg/static/icons/svg/136/136503.svg");
+        --bg-content: "JAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \aJAVIER SOLER \a";
+      }
+
+      .visiting-card {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 5%;
+        background-color: var(--color-carta);
+        border: var(--bordes);
+        position: relative;
+        padding: 2rem;
+        overflow: hidden;
+      }
+
+      .visiting-card--content span:first-child {
+        font-weight: bold;
+      }
+
+      .visiting-card--content a:last-child {
+        font-weight: bold;
+      }
+
+      .visiting-card--content a[href^="mailto"]::before {
+        width: 2rem;
+        height: 2rem;
+        content: var(--null);
+        background-image: var(--user);
+        background-size: 2rem;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: inline-block;
+      }
+
+      .visiting-card--back span:first-child {
+        margin-bottom: 1rem;
+      }
+
+      .visiting-card--back > a::before {
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-size: 20px 20px;
+        margin-right: 1rem;
+        background-image: var(--pdf);
+        content: var(--null);
+      }
+
+      .visiting-card--back a:last-child {
+        font-weight: bold;
+      }
+
+      .visiting-card--back a:last-child::before {
+        height: 20px;
+        width: 20px;
+        margin-right: 1em;
+        display: inline-block;
+        content: var(--null);
+        background-image: var(--zip);
+        background-size: 20px 20px;
+      }
+
+      .visiting-card__bg-text {
+        position: absolute;
+        transform: rotate(30deg);
+        opacity: 0.2;
+        color: blue;
+      }
+      .visiting-card__bg-text::before {
+        content: var(--bg-content);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="visiting-card visiting-card--content">
+      <span>Los interlocutores a su servicio:</span>
+      <a href="mailto">Javier Soler Artero: Jefe de proyecto</a>
+      <span
+        >Para las reclamaciones, vaya a
+        <a href="#">Problemas con el pedido</a></span
+      >
+      <p class="visiting-card__bg-text"></p>
+    </section>
+
+    <section class="visiting-card visiting-card--back">
+      <span>Descarge nuestros archivos: </span>
+      <a href="#">El folleto de presentación (PDF)</a>
+      <a href="#">Los nuevos productos (PDF)</a>
+      <a href="#">Las nuevas ofertas promocionales (PDF)</a>
+      <a href="#">Todos nuestros documentos (.zip)</a>
+    </section>
+  </body>
+</html>
