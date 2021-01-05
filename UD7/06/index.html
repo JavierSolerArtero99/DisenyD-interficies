@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>box shadow :: CSS</title>
+    <style media="screen">
+      :root {
+        --primera: 8px 8px 0px 0px grey;
+        --segunda: 8px 8px 8px 0px black;
+        --tercera: 5px 5px 0px 0px red, -8px 0px 8px 0px rgb(0, 75, 0);
+        --cuarta: 0px 0px 5px 5px yellow;
+        --quinta: inset 0px 0px 10px 5px yellow;
+      }
+
+      div {
+        color: white;
+      }
+
+      .caja {
+        margin-left: 40px;
+        width: 400px;
+        height: 100px;
+        background-color: #aaa;
+        box-shadow: var(--primera);
+      }
+
+      .caja2 {
+        margin-left: 40px;
+        width: 400px;
+        height: 100px;
+        background-color: #aaa;
+        box-shadow: var(--segunda);
+      }
+
+      .caja3 {
+        margin-left: 40px;
+        width: 400px;
+        height: 100px;
+        background-color: #aaa;
+        box-shadow: var(--tercera);
+      }
+
+      .caja4 {
+        margin-left: 40px;
+        width: 400px;
+        height: 100px;
+        background-color: #aaa;
+        box-shadow: var(--cuarta);
+      }
+
+      .caja5 {
+        margin-left: 40px;
+        width: 400px;
+        height: 100px;
+        background-color: #aaa;
+        box-shadow: var(--quinta);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Shadow</h1>
+    <div class="caja">box-shadow</div>
+    <br />
+    <div class="caja2">box-shadow</div>
+    <br />
+    <div class="caja3">box-shadow</div>
+    <br />
+    <div class="caja4">box-shadow</div>
+    <br />
+    <div class="caja5">box-shadow</div>
+  </body>
+</html>
