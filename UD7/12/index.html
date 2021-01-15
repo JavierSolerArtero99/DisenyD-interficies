@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Transitions :: DIW</title>
+    <style media="screen">
+      body {
+        height: 100%;
+        width: 100%;
+        background-color: lime;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        animation: body 5s backwards infinite;
+      }
+      div {
+        width: 100px;
+        height: 100px;
+        animation: div 5s ease infinite;
+        background-color: crimson;
+      }
+
+       @keyframes body {
+        10% {
+            height: 100%;
+            width: 100%;
+            background-color: linen;
+        }
+        20% {
+            height: 60%;
+            width: 58%;
+            background-color: gold;
+        }
+        30% {
+            height: 10%;
+            width: 0%;
+            background-color: blue;
+        }
+        40% {
+            height: 90%;
+            width: 100%;
+            background-color: green;
+        }
+        50% {
+            height: 30%;
+            width: 50%;
+            background-color: yellow;
+        }
+        60% {
+            height: 23%;
+            width: 65%;
+            background-color: navy;
+        }
+        70% {
+            height: 23%;
+            width: 3%;
+            background-color: salmon;
+        }
+        80% {
+            height: 77%;
+            width: 77%;
+            background-color: fuchsia;
+        }
+        90% {
+            height: 44%;
+            width: 44%;
+            background-color: linen;
+        }
+        100% {
+            height: 100%;
+            width: 100%;
+            background-color: linen;
+        }
+      }
+
+      @keyframes div {
+        10% {
+          background-color: cyan;
+        }
+        20% {
+          background-color: red;
+        }
+        30% {
+          background-color: green;
+        }
+        40% {
+          background-color: purple;
+        }
+        50% {
+          background-color: hotpink;
+        }
+        60% {
+          background-color: lime;
+        }
+      }
+
+      h1 {
+        animation: h1 5s infinite;
+      }
+
+      @keyframes h1 {
+        10% {
+          margin-left: 100px;
+        }
+        20% {
+          margin-left: -100px;
+        }
+        30% {
+          margin-left: 100px;
+        }
+        40% {
+          margin-left: -100px;
+        }
+        50% {
+          margin-left: 100px;
+        }
+        60% {
+          margin-left: -100px;
+        }
+        70% {
+          margin-left: -200px;
+        }
+        80% {
+          margin-left: -200px;
+        }
+        90% {
+          margin-left: -500px;
+        }
+        100% {
+          margin-left: -500px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transitions</h1>
+    <div></div>
+  </body>
+</html>
