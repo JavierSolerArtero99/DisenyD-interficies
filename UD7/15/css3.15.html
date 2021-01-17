@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <title>Filters</title>
+    <style>
+      :root {
+        --filter: grayscale(46%) sepia(41%) hue-rotate(118deg);
+        --animate: animate 5s infinite;
+      }
+
+      @keyframes animate {
+        10% {
+          margin-left: 100px;
+        }
+        20% {
+          margin-left: -100px;
+        }
+        30% {
+          margin-left: 100px;
+        }
+        40% {
+          margin-left: -100px;
+        }
+        50% {
+          margin-left: 100px;
+        }
+        60% {
+          margin-left: -100px;
+        }
+        70% {
+          margin-left: -200px;
+        }
+        80% {
+          margin-left: -200px;
+        }
+        90% {
+          margin-left: -500px;
+        }
+        100% {
+          margin-left: -500px;
+        }
+      }
+      li {
+        filter: var(--filter);
+        animation: var(--animate);
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>filter: <img src="css3.15b.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15b.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15c.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15d.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15e.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15b.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15b.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15c.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15d.jpg" alt="" /></li>
+      <li>filter: <img src="css3.15e.jpg" alt="" /></li>
+    </ul>
+  </body>
+</html>
