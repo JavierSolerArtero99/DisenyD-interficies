@@ -1,0 +1,24 @@
+#primero .destacado {
+  font-size: 1.6rem;
+  color: #ff8000;
+  text-align: center;
+  padding: 6px;
+}
+
+#segundo .destacado {
+  font-size: 1.4rem;
+  color: #2e5f64;
+  padding: 5px;
+  text-decoration: underline;
+}
+#segundo p:not(.destacado)::first-line {
+  font-style: italic;
+}
+#segundo div {
+  padding: 20px;
+}
+#segundo #parrafos {
+  text-align: right;
+}
+
+/*# sourceMappingURL=style.css.map */

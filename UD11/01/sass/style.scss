@@ -1,0 +1,29 @@
+$naranja: #ff8000;
+$verde: #2e5f64;
+
+#primero {
+  .destacado {
+    font-size: 1.6rem;
+    color: $naranja;
+    text-align: center;
+    padding: 6px;
+  }
+}
+
+#segundo {
+  .destacado {
+    font-size: 1.4rem;
+    color: $verde;
+    padding: 5px;
+    text-decoration: underline;
+  }
+  p:not(.destacado)::first-line {
+    font-style: italic;
+  }
+  div {
+      padding: 20px;
+  }
+  #parrafos {
+      text-align: right;
+  }
+}
