@@ -1,0 +1,36 @@
+
+// Variables
+$textColor: #eee;
+$hoverTextColor: #fff;
+$background: #666;
+$listHover: #888;
+
+// Mixins
+@mixin text_n_background {
+    color: $textColor;
+    background-color: $background;
+}
+
+@mixin hovers {
+    color: $hoverTextColor;
+    background-color: $listHover;
+}
+
+@mixin box_sizing($x) {
+    -webkit-box-sizing: $x;
+}
+
+@mixin transition($x, $y, $n: linear) {
+    -webkit-transition-property: $x;
+    -webkit-transition-duration: $y;
+    -webkit-transition-timing-function: $n;
+}
+
+@mixin animation($x, $y, $n: linear) {
+    -webkit-animation-name: $x;
+    -webkit-animation-duration: $y;
+    -webkit-animation-timing-function: $n;
+}
+
+// Importación del archivo menu.scss
+@import "_menu";
