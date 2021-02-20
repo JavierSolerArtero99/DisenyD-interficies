@@ -1,0 +1,57 @@
+$colorText: #eee;
+$colorTextHover: lighten($colorText, 10%);
+$colorBack: #15a;
+$colorBackHover: lighten($colorBack, 10%);
+$colorTitulo: darken($colorBack, 10%);
+$darkThemeColor: #138;
+$lightThemeColor: #ddf;
+
+@import "_mixins";
+
+$theme: "dark";
+
+@if $theme == "dark" {
+  $colorBack: #138;
+} @else if $theme == "light" {
+  $colorBack: #ddf;
+  $colorText: #138;
+}
+
+
+@keyframes iluminar {
+  from {
+    background-color: $colorBack;
+    color: #eee;
+  }
+  to {
+    background-color: $colorBackHover;
+    color: #fff;
+  }
+}
+
+footer {
+  @include text_n_background;
+  @include box_sizing("border-box");
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  color: #444;
+  background-color: #eee;
+  padding: 12px 30px;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@import "_menu";
+@import "_contenido";
