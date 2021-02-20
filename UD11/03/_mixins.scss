@@ -1,0 +1,38 @@
+// Mixins
+@mixin text_n_background {
+  color: $colorText;
+  background-color: $colorBack;
+}
+
+@mixin hovers {
+  color: $colorTextHover;
+  background-color: $colorBackHover;
+}
+
+@mixin box_sizing($x) {
+  -webkit-box-sizing: $x;
+}
+
+@mixin transition($x, $y, $n: linear) {
+  -webkit-transition-property: $x;
+  -webkit-transition-duration: $y;
+  -webkit-transition-timing-function: $n;
+}
+
+@mixin animation($x, $y, $n: linear) {
+  -webkit-animation-name: $x;
+  -webkit-animation-duration: $y;
+  -webkit-animation-timing-function: $n;
+}
+
+@mixin responsive($size) {
+  @if $size == "medium" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == "small" {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+}
